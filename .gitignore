@@ -15,6 +15,9 @@ MinSizeRel
 RelWithDebInfo
 *.xcodeproj
 
+# Cafu specific
+/build/
+
 # CMake files
 Makefile
 CMakeCache.txt
@@ -79,4 +82,3 @@ tests/title
 tests/version
 tests/vulkan
 tests/windows
-
