@@ -14,7 +14,7 @@ if sys.platform == "win32":
         "win32_tls.c win32_window.c wgl_context.c egl_context.c"
     )
 
-elif sys.platform == "linux2":
+elif sys.platform.startswith("linux"):
     envGLFW.Append(CPPDEFINES=['_GLFW_X11', '_GLFW_HAS_XF86VM'])
     source_files += Split(
         "x11_init.c x11_monitor.c x11_window.c xkb_unicode.c linux_joystick.c "
